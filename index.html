@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Master - Estética Automotiva</title>
+  <meta name="description" content="Detail Master Estética Automotiva - Proteção, Brilho e Qualidade para seu veículo.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div>
+          <span class="detail">DETAIL </span><span class="master">MASTER</span>
+        </div>
+        <span class="tagline">Estética Automotiva</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <button id="toggleTheme" class="theme-btn">🌙</button>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#motos">Motos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#agendar" class="nav-cta">Agendar Agora</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Estética Automotiva Premium</div>
+
+        <h1 class="hero-title">
+          DETAIL
+          <span class="highlight">MASTER</span>
+        </h1>
+
+        <p class="hero-subtitle">Estética Automotiva</p>
+
+        <p class="hero-quote">"Nossa melhor propaganda é a qualidade"</p>
+
+        <div class="hero-pillars">
+          <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span class="pillar-label">Proteção</span>
+          </div>
+          <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <span class="pillar-label">Brilho</span>
+          </div>
+          <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <span class="pillar-label">Qualidade</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#agendar" class="btn-red">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Agendar Agora
+          </a>
+          <a href="#precos" class="btn-red" style="background: transparent; border: 2px solid var(--red); color: var(--red);">
+            Ver Preços
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-box">
+          <div class="hero-glow"></div>
+          <!-- Car + Moto SVG Illustration -->
+           <img src="img/logo.png" class="hero-logo-img" alt="Logo">
+            <!-- Glow background -->
+            <ellipse cx="260" cy="170" rx="220" ry="120" fill="rgba(224,27,36,0.04)"/>
+
+            <!-- === CAR (left-center) === -->
+            <!-- Car body -->
+            <path d="M60 195 Q80 165 140 155 L230 150 Q270 148 290 155 L340 195 L340 220 L60 220 Z" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <!-- Car roof -->
+            <path d="M130 155 Q155 120 200 115 L250 113 Q285 113 300 130 L320 155" fill="#111" stroke="#e01b24" stroke-width="1.5"/>
+            <!-- Car windows -->
+            <path d="M145 155 Q162 128 198 122 L238 121 Q265 121 280 138 L295 155 Z" fill="#222" stroke="#333" stroke-width="1"/>
+            <!-- Window divider -->
+            <line x1="220" y1="121" x2="218" y2="155" stroke="#333" stroke-width="1.5"/>
+            <!-- Front lights -->
+            <ellipse cx="335" cy="185" rx="8" ry="5" fill="#ff2d36" opacity="0.8"/>
+            <ellipse cx="335" cy="185" rx="4" ry="3" fill="#fff" opacity="0.9"/>
+            <!-- Rear lights -->
+            <ellipse cx="68" cy="190" rx="6" ry="4" fill="#e01b24" opacity="0.9"/>
+            <!-- Wheels -->
+            <circle cx="115" cy="220" r="24" fill="#0d0d0d" stroke="#333" stroke-width="2"/>
+            <circle cx="115" cy="220" r="14" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <circle cx="115" cy="220" r="5" fill="#e01b24"/>
+            <circle cx="285" cy="220" r="24" fill="#0d0d0d" stroke="#333" stroke-width="2"/>
+            <circle cx="285" cy="220" r="14" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <circle cx="285" cy="220" r="5" fill="#e01b24"/>
+            <!-- Wheel spokes car -->
+            <line x1="115" y1="206" x2="115" y2="234" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="101" y1="220" x2="129" y2="220" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="105" y1="210" x2="125" y2="230" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="125" y1="210" x2="105" y2="230" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="285" y1="206" x2="285" y2="234" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="271" y1="220" x2="299" y2="220" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="275" y1="210" x2="295" y2="230" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <line x1="295" y1="210" x2="275" y2="230" stroke="#e01b24" stroke-width="1.2" opacity="0.6"/>
+            <!-- Ground shadow car -->
+            <ellipse cx="200" cy="244" rx="130" ry="8" fill="rgba(224,27,36,0.06)"/>
+
+            <!-- === MOTORCYCLE (right) === -->
+            <!-- Moto frame -->
+            <path d="M380 185 L420 160 L450 160 L470 185 L460 210 L390 210 Z" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <!-- Moto fuel tank -->
+            <ellipse cx="430" cy="165" rx="22" ry="12" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <!-- Moto seat -->
+            <path d="M420 160 Q435 155 455 162 L453 168 Q436 162 420 167 Z" fill="#222" stroke="#333" stroke-width="1"/>
+            <!-- Moto front fork -->
+            <line x1="470" y1="178" x2="480" y2="210" stroke="#e01b24" stroke-width="2.5"/>
+            <line x1="465" y1="178" x2="474" y2="210" stroke="#555" stroke-width="2"/>
+            <!-- Moto handlebar -->
+            <path d="M450 160 Q460 155 475 158 Q480 159 482 162" stroke="#888" stroke-width="2" fill="none"/>
+            <!-- Moto exhaust -->
+            <path d="M390 200 Q375 205 365 208" stroke="#888" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Moto front wheel -->
+            <circle cx="478" cy="218" r="20" fill="#0d0d0d" stroke="#333" stroke-width="2"/>
+            <circle cx="478" cy="218" r="12" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <circle cx="478" cy="218" r="4" fill="#e01b24"/>
+            <!-- Moto rear wheel -->
+            <circle cx="385" cy="218" r="20" fill="#0d0d0d" stroke="#333" stroke-width="2"/>
+            <circle cx="385" cy="218" r="12" fill="#1a1a1a" stroke="#e01b24" stroke-width="1.5"/>
+            <circle cx="385" cy="218" r="4" fill="#e01b24"/>
+            <!-- Moto wheel spokes -->
+            <line x1="478" y1="206" x2="478" y2="230" stroke="#e01b24" stroke-width="1" opacity="0.6"/>
+            <line x1="466" y1="218" x2="490" y2="218" stroke="#e01b24" stroke-width="1" opacity="0.6"/>
+            <line x1="385" y1="206" x2="385" y2="230" stroke="#e01b24" stroke-width="1" opacity="0.6"/>
+            <line x1="373" y1="218" x2="397" y2="218" stroke="#e01b24" stroke-width="1" opacity="0.6"/>
+            <!-- Moto headlight -->
+            <ellipse cx="484" cy="183" rx="7" ry="5" fill="#ff2d36" opacity="0.7"/>
+            <ellipse cx="484" cy="183" rx="4" ry="3" fill="#fff" opacity="0.8"/>
+            <!-- Ground shadow moto -->
+            <ellipse cx="432" cy="242" rx="65" ry="5" fill="rgba(224,27,36,0.06)"/>
+
+            <!-- LOGO TEXT -->
+            <text x="260" y="290" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="42" fill="white" letter-spacing="4">DETAIL <tspan fill="#e01b24">MASTER</tspan></text>
+            <text x="260" y="308" text-anchor="middle" font-family="'Rajdhani', sans-serif" font-size="12" fill="#888" letter-spacing="8">ESTÉTICA AUTOMOTIVA</text>
+
+            <!-- Decorative lines -->
+            <line x1="80" y1="302" x2="180" y2="302" stroke="#e01b24" stroke-width="1" opacity="0.5"/>
+            <line x1="340" y1="302" x2="440" y2="302" stroke="#e01b24" stroke-width="1" opacity="0.5"/>
+            <circle cx="260" cy="302" r="3" fill="#e01b24"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      <h2 class="section-title">NOSSOS <span>SERVIÇOS</span></h2>
+
+      <div class="services-grid">
+        <!-- Lavagem Completa -->
+        <div class="service-card fade-in stagger-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/>
+              <path d="M7 12s1-4 5-4 5 4 5 4-1 4-5 4-5-4-5-4"/>
+              <path d="M5 5l14 14"/>
+            </svg>
+          </div>
+          <div class="service-name">Lavagem Completa</div>
+          <div class="service-desc">Limpeza interna e externa completa com produtos automotivos especializados</div>
+        </div>
+
+        <!-- Polimento Comercial -->
+        <div class="service-card fade-in stagger-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <div class="service-name">Polimento Comercial</div>
+          <div class="service-desc">Aumenta o brilho e remove micro-riscos da pintura com máquina orbital</div>
+        </div>
+
+        <!-- Proteção de Pintura -->
+        <div class="service-card fade-in stagger-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="service-name">Proteção de Pintura</div>
+          <div class="service-desc">Mais durabilidade e resistência com cera, selante ou vitrificação</div>
+        </div>
+
+        <!-- Higienização Interna -->
+        <div class="service-card fade-in stagger-4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              <line x1="12" y1="12" x2="12" y2="16"/>
+              <line x1="10" y1="14" x2="14" y2="14"/>
+            </svg>
+          </div>
+          <div class="service-name">Higienização Interna</div>
+          <div class="service-desc">Ambiente limpo, saudável e seguro — aspiração e limpeza profunda</div>
+        </div>
+
+        <!-- Revitalização de Peças -->
+        <div class="service-card fade-in stagger-5">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="23 4 23 10 17 10"/>
+              <polyline points="1 20 1 14 7 14"/>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </svg>
+          </div>
+          <div class="service-name">Revitalização de Peças</div>
+          <div class="service-desc">Limpeza profunda e aplicação de produtos revitalizadores nos plásticos</div>
+        </div>
+
+        <!-- Limpeza de Motos -->
+        <div class="service-card fade-in stagger-6">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="18" r="3"/>
+              <path d="M6 15V9l6-3 4 3h3l1 3h-2.5"/>
+              <path d="M14 9l2 6"/>
+            </svg>
+          </div>
+          <div class="service-name">Limpeza de Motos</div>
+          <div class="service-desc">Cuidado completo para sua moto — básica, técnica ou premium</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" id="agendar">
+    <div class="container">
+      <div class="cta-banner-title fade-in">
+        <span>SEU CARRO</span>
+        <span class="impecavel">IMPECÁVEL</span>
+        <span class="script">começa aqui!</span>
+      </div>
+      <div class="action-grid fade-in">
+        <a href="#" class="action-card">
+          <div class="action-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="action-content">
+            <div class="action-title">Agendar Limpeza</div>
+            <div class="action-sub">Escolha o melhor horário e traga seu veículo</div>
+          </div>
+          <div class="action-cta">CLIQUE AQUI</div>
+        </a>
+
+        <a href="#" class="action-card">
+          <div class="action-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="action-content">
+            <div class="action-title">Nossa Localização</div>
+            <div class="action-sub">Encontre-nos facilmente e venha nos visitar!</div>
+          </div>
+          <div class="action-cta">CLIQUE AQUI</div>
+        </a>
+
+        <a href="#precos" class="action-card">
+          <div class="action-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="action-content">
+            <div class="action-title">Valores e Serviços</div>
+            <div class="action-sub">Escolha o melhor procedimento</div>
+          </div>
+          <div class="action-cta">CLIQUE AQUI</div>
+        </a>
+
+        <a href="#" class="action-card">
+          <div class="action-icon-wrap">
+            <!-- Instagram icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </div>
+          <div class="action-content">
+            <div class="action-title">Instagram</div>
+            <div class="action-sub">Acompanhe nosso serviço</div>
+          </div>
+          <div class="action-cta">CLIQUE AQUI</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section" id="precos">
+    <div class="container">
+
+      <!-- LIMPEZA AUTOMOTIVA -->
+      <div class="pricing-category fade-in">
+        <h2 class="cat-title">LIMPEZA AUTOMOTIVA</h2>
+
+        <div class="lavagem-grid">
+          <!-- Limpeza Convencional -->
+          <div class="price-card">
+            <div class="price-card-title">Limpeza Convencional (Básica)</div>
+
+            <div class="includes-title">O que inclui:</div>
+
+            <div class="part-label">Parte Externa</div>
+            <ul class="feature-list">
+              <li>Aplicação de shampoo automotivo</li>
+              <li>Lavagem da lataria, rodas e caixa de roda</li>
+              <li>Enxágue completo</li>
+              <li>Secagem com pano de microfibra</li>
+            </ul>
+
+            <div class="part-label">Parte Interna</div>
+            <ul class="feature-list">
+              <li>Aspiração completa (bancos, carpetes e porta-malas)</li>
+              <li>Limpeza de plásticos e painel</li>
+              <li>Limpeza básica dos vidros</li>
+              <li>Finalização com aroma agradável</li>
+            </ul>
+
+            <div class="size-prices">
+              <div class="size-tag">
+                <span class="size-label">P</span>
+                <span class="size-price">R$100</span>
+              </div>
+              <div class="size-tag">
+                <span class="size-label">M</span>
+                <span class="size-price">R$120</span>
+              </div>
+              <div class="size-tag">
+                <span class="size-label">G</span>
+                <span class="size-price">R$140</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Limpeza Técnica -->
+          <div class="price-card">
+            <div class="price-card-title">Limpeza Técnica + Proteção e Restauração de Plásticos Internos</div>
+
+            <div class="includes-title">O que inclui:</div>
+
+            <div class="part-label">Parte Externa</div>
+            <ul class="feature-list">
+              <li>Lavagem técnica com produtos específicos</li>
+              <li>Limpeza detalhada de rodas, caixas de roda e cantos</li>
+              <li>Atenção em emblemas, frisos e áreas de difícil acesso</li>
+            </ul>
+
+            <div class="part-label">Parte Interna</div>
+            <ul class="feature-list">
+              <li>Aspiração completa e detalhada</li>
+              <li>Limpeza técnica com pincéis em saídas de ar, botões e cantos</li>
+              <li>Limpeza profunda de plásticos, painel e portas</li>
+              <li>Limpeza mais intensa de manchas leves</li>
+            </ul>
+
+            <div class="size-prices">
+              <div class="size-tag">
+                <span class="size-label">P</span>
+                <span class="size-price">R$150</span>
+              </div>
+              <div class="size-tag">
+                <span class="size-label">M</span>
+                <span class="size-price">R$170</span>
+              </div>
+              <div class="size-tag">
+                <span class="size-label">G</span>
+                <span class="size-price">R$190</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVIÇOS INTERNOS E ESPECIAIS -->
+      <div class="pricing-category fade-in">
+        <h2 class="cat-title">SERVIÇOS INTERNOS E ESPECIAIS</h2>
+
+        <div class="specials-grid">
+          <!-- Limpeza de Motor -->
+          <div class="special-card">
+            <div class="special-card-title">Limpeza de Motor</div>
+            <div class="price-row">
+              <span class="price-row-label">Limpeza simples</span>
+              <span class="price-row-value">R$ 80,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Limpeza + verniz de motor (acabamento)</span>
+              <span class="price-row-value">R$ 120,00</span>
+            </div>
+          </div>
+
+          <!-- Higienização de Banco de Tecido -->
+          <div class="special-card">
+            <div class="special-card-title">Higienização de Banco de Tecido</div>
+            <div class="price-row">
+              <span class="price-row-label">Banco avulso</span>
+              <span class="price-row-value">R$ 50,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Completo C/P</span>
+              <span class="price-row-value">R$ 200,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Completo C/M</span>
+              <span class="price-row-value">R$ 220,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">SUV / Muito Sujo</span>
+              <span class="price-row-value">R$ 250,00</span>
+            </div>
+          </div>
+
+          <!-- Higienização de Banco de Couro -->
+          <div class="special-card">
+            <div class="special-card-title">Higienização de Banco de Couro</div>
+            <div class="price-row">
+              <span class="price-row-label">Banco avulso (limpeza + hidratação)</span>
+              <span class="price-row-value">R$ 40,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Completo</span>
+              <span class="price-row-value">R$ 200,00</span>
+            </div>
+          </div>
+
+          <!-- Cristalização de Vidro -->
+          <div class="special-card">
+            <div class="special-card-title">Cristalização de Vidro</div>
+            <p style="font-size:0.8rem;color:var(--gray);margin-bottom:12px;">Tratamento que cria uma camada protetora no vidro com efeito repelente à água.</p>
+            <div class="price-row">
+              <span class="price-row-label">Para-brisa</span>
+              <span class="price-row-value">R$ 80,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Para-brisa + dianteiro</span>
+              <span class="price-row-value">R$ 120,00</span>
+            </div>
+            <div class="price-row">
+              <span class="price-row-label">Todos os vidros</span>
+              <span class="price-row-value">R$ 180,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restauração de Plásticos (full width) -->
+        <div class="special-card" style="margin-top:20px;">
+          <div class="special-card-title">Restauração de Plásticos</div>
+          <div style="display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;flex-wrap:wrap;">
+            <ul class="feature-list">
+              <li>Limpeza profunda dos plásticos</li>
+              <li>Preparação da superfície</li>
+              <li>Aplicação de revitalizador específico</li>
+              <li>Acabamento uniforme e protegido</li>
+            </ul>
+            <div style="min-width:150px;">
+              <div class="price-row">
+                <span class="price-row-label">Interna:</span>
+                <span class="price-row-value">R$ 30,00</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row-label">Externa:</span>
+                <span class="price-row-value">R$ 20,00</span>
+              </div>
+              <div class="price-row">
+                <span class="price-row-label">Completo:</span>
+                <span class="price-row-value">R$ 40,00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROTEÇÃO E BRILHO PARA PINTURA -->
+      <div class="pricing-category fade-in">
+        <h2 class="cat-title">PROTEÇÃO E BRILHO PARA PINTURA</h2>
+
+        <div class="protect-grid">
+          <!-- Básica -->
+          <div class="protect-card">
+            <div class="star-icon">✦</div>
+            <div class="protect-title">Proteção Básica</div>
+            <div class="protect-type">(CERA)</div>
+            <ul class="protect-features">
+              <li>Brilho imediato</li>
+              <li>Proteção leve contra sol e sujeira</li>
+              <li>Toque liso na pintura</li>
+            </ul>
+            <div class="durability">Durabilidade: <strong>15 a 30 dias</strong></div>
+            <div class="big-price">R$ 30,00</div>
+          </div>
+
+          <!-- Intermediária -->
+          <div class="protect-card featured">
+            <div class="star-icon">✦ ✦</div>
+            <div class="protect-title">Proteção Intermediária</div>
+            <div class="protect-type">(SELANTE PARA PINTURA)</div>
+            <ul class="protect-features">
+              <li>Brilho mais intenso</li>
+              <li>Maior proteção contra sol, chuva e sujeira</li>
+              <li>Melhor repelente à água</li>
+            </ul>
+            <div class="durability">Durabilidade: <strong>2 a 4 meses</strong></div>
+            <div class="big-price">R$ 50,00</div>
+          </div>
+
+          <!-- Premium -->
+          <div class="protect-card">
+            <div class="star-icon">✦ ✦ ✦</div>
+            <div class="protect-title">Proteção Premium</div>
+            <div class="protect-type">(VITRIFICAÇÃO)</div>
+            <ul class="protect-features">
+              <li>Proteção duradoura</li>
+              <li>Brilho espelhado</li>
+              <li>Facilidade na lavagem</li>
+            </ul>
+            <div class="durability">Durabilidade: <strong>12 meses +</strong></div>
+            <div class="big-price">R$ 800,00</div>
+          </div>
+        </div>
+
+        <!-- Polimento e Acabamento -->
+        <h3 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:32px;letter-spacing:0.05em;">POLIMENTO E ACABAMENTO</h3>
+        <div class="lavagem-grid">
+          <div class="price-card">
+            <div class="price-card-title">Enceramento Técnico</div>
+            <ul class="feature-list">
+              <li>Lavagem detalhada da pintura</li>
+              <li>Descontaminação (remoção de sujeiras presas)</li>
+              <li>Secagem técnica</li>
+              <li>Utilização de politriz Roto orbital</li>
+              <li>Aplicação de cera de qualidade</li>
+              <li>Remoção e acabamento com microfibra</li>
+              <li>Melhor preparação, acabamento e durabilidade</li>
+            </ul>
+            <div class="size-prices">
+              <div class="size-tag"><span class="size-label">P</span><span class="size-price">R$150</span></div>
+              <div class="size-tag"><span class="size-label">M</span><span class="size-price">R$180</span></div>
+              <div class="size-tag"><span class="size-label">G</span><span class="size-price">R$220</span></div>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-title">Polimento Comercial</div>
+            <ul class="feature-list">
+              <li>Lavagem detalhada do veículo</li>
+              <li>Descontaminação da pintura (quando necessário)</li>
+              <li>Polimento com máquina (1 etapa)</li>
+              <li>Remoção de riscos leves e marcas superficiais</li>
+              <li>Finalização com proteção (cera ou selante)</li>
+            </ul>
+            <div class="size-prices">
+              <div class="size-tag"><span class="size-label">P</span><span class="size-price">R$300</span></div>
+              <div class="size-tag"><span class="size-label">M</span><span class="size-price">R$400</span></div>
+              <div class="size-tag"><span class="size-label">G</span><span class="size-price">R$600</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVIÇOS PARA MOTOS -->
+      <div class="pricing-category fade-in" id="motos">
+        <h2 class="cat-title">SERVIÇOS PARA <span style="color:var(--red)">MOTOS</span></h2>
+
+        <div class="motos-grid">
+          <!-- Limpeza Convencional Moto -->
+          <div class="price-card">
+            <div class="price-card-title">Limpeza Convencional (Básica)</div>
+            <ul class="feature-list">
+              <li>Lavagem completa</li>
+              <li>Rodas e motor superficial</li>
+              <li>Secagem com pano de microfibra</li>
+              <li>Aplicação de pretinho</li>
+            </ul>
+            <div class="moto-porte-table">
+              <div class="moto-porte-title">Motos de Porte</div>
+              <div class="price-row"><span class="price-row-label">100cc - 250cc</span><span class="price-row-value">R$ 50,00</span></div>
+              <div class="price-row"><span class="price-row-label">300cc - 600cc</span><span class="price-row-value">R$ 70,00</span></div>
+              <div class="price-row"><span class="price-row-label">700cc - 1200cc</span><span class="price-row-value">R$ 90,00</span></div>
+            </div>
+          </div>
+
+          <!-- Limpeza Técnica + Proteção -->
+          <div class="price-card">
+            <div class="price-card-title">Limpeza Técnica + Proteção</div>
+            <ul class="feature-list">
+              <li>Limpeza detalhada</li>
+              <li>Motor mais caprichado</li>
+              <li>Cabtos e peças pequenas</li>
+              <li>Acabamento melhor</li>
+            </ul>
+            <div class="moto-porte-table">
+              <div class="moto-porte-title">Motos de Porte</div>
+              <div class="price-row"><span class="price-row-label">100cc - 250cc</span><span class="price-row-value">R$ 70,00</span></div>
+              <div class="price-row"><span class="price-row-label">300cc - 600cc</span><span class="price-row-value">R$ 90,00</span></div>
+              <div class="price-row"><span class="price-row-label">700cc - 1200cc</span><span class="price-row-value">R$ 110,00</span></div>
+            </div>
+          </div>
+
+          <!-- Limpeza Técnica Premium -->
+          <div class="price-card" style="border-color:var(--red-dark);">
+            <div class="price-card-title">Limpeza Técnica Premium</div>
+            <ul class="feature-list">
+              <li>Limpeza detalhada</li>
+              <li>Motor mais caprichado</li>
+              <li>Cantos e peças pequenas</li>
+              <li>Aplicação de verniz em partes metálicas e motor</li>
+              <li>Aplicação de selante cristalizador de proteção até 6 meses</li>
+              <li>Intensificação da cor da pintura</li>
+            </ul>
+            <div class="moto-porte-table">
+              <div class="moto-porte-title">Motos de Porte</div>
+              <div class="price-row"><span class="price-row-label">100cc - 250cc</span><span class="price-row-value">R$ 120,00</span></div>
+              <div class="price-row"><span class="price-row-label">300cc - 600cc</span><span class="price-row-value">R$ 140,00</span></div>
+              <div class="price-row"><span class="price-row-label">700cc - 1200cc</span><span class="price-row-value">R$ 160,00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviços avulsos motos -->
+        <div class="specials-grid">
+          <div class="special-card">
+            <div class="special-card-title">Polimento Comercial</div>
+            <p style="font-size:0.8rem;color:var(--gray);margin-bottom:8px;">(Tanque + Carenagem)</p>
+            <ul class="feature-list" style="margin-bottom:12px;">
+              <li>Remove riscos leves</li>
+              <li>Devolve brilho</li>
+              <li>Realça aparência</li>
+            </ul>
+            <div class="big-price">R$ 100,00</div>
+          </div>
+
+          <div class="special-card">
+            <div class="special-card-title">Remoção de Ferrugem</div>
+            <ul class="feature-list" style="margin-bottom:12px;">
+              <li>Avaliação do nível de ferrugem</li>
+              <li>Aplicação de produto removedor específico</li>
+              <li>Ação mecânica</li>
+              <li>Aplicação de proteção para retardar o retorno</li>
+            </ul>
+            <div class="big-price">R$ 70,00</div>
+          </div>
+
+          <div class="special-card">
+            <div class="special-card-title">Clareamento de Motor</div>
+            <ul class="feature-list" style="margin-bottom:12px;">
+              <li>Remove o escurecimento e manchas do motor</li>
+              <li>Devolve o aspecto de limpo e renovado</li>
+            </ul>
+            <div class="big-price">R$ 50,00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div style="text-align:center;margin-top:60px;" class="fade-in">
+        <a href="#agendar" class="btn-red" style="font-size:1.2rem;padding:18px 48px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          AGENDE AGORA
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand-name">DETAIL <span>MASTER</span></div>
+          <div class="brand-sub">Estética Automotiva</div>
+          <p class="brand-quote">"Nossa melhor propaganda é a <span>qualidade</span>"</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <div class="footer-links">
+            <a href="#servicos">Nossos Serviços</a>
+            <a href="#precos">Tabela de Preços</a>
+            <a href="#motos">Serviços para Motos</a>
+            <a href="#agendar">Agendar Limpeza</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contato</div>
+          <div class="footer-links">
+            <a href="#">📍 Nossa Localização</a>
+            <a href="#">📱 WhatsApp</a>
+            <a href="#">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Detail Master Estética Automotiva. Todos os direitos reservados.</p>
+        <p style="color:var(--red);font-family:var(--font-heading);font-weight:700;font-size:0.85rem;letter-spacing:0.05em;">PROTEÇÃO • BRILHO • QUALIDADE</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
